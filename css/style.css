@@ -268,3 +268,37 @@ td.donor-name { font-size: 1.06rem; }
   .thanks { margin: 1.2rem 0 .8rem; }
   .footer { margin-top: 1.6rem; }
 }
+
+
+.button-row {
+    display: flex;
+    gap: 10px;
+}
+
+.button-row .btn {
+    transition: all 0.3s ease;
+}
+
+/* Active button */
+.button-row .btn.active {
+    background-color: #025124 !important;
+    border-color: #c08c91 !important;
+    color: white !important;
+}
+
+/* Hover */
+.button-row .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .button-row {
+        width: 100%;
+    }
+
+    .button-row .btn {
+        flex: 1;
+    }
+}
+
